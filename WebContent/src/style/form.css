@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  
+}
+
+.login-title {
+  width: 40%;
+  text-align: center;
+}
+
+.login-ip {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px 0;
+}
+
+::placeholder {
+  padding-left: 20px;
+}
+
+.register-btn {
+  margin-top: 30px;
+  width: 30%;
+  background-color: rgb(68, 92, 92);
+  border: none;
+  border-radius: 15px;
+  color: whitesmoke;
+}
+
+.register-btn:hover {
+  cursor: pointer;
+  background-color: rgb(92, 133, 133);
+  box-shadow: 10px 10px 40px rgb(109, 108, 108);
+  transition: box-shadow 0.5s;
+  transition: background-color 0.7s;
+}
+
+.ip {
+  border: 2px solid rgb(94, 122, 103);
+}
+
+.login {
+  margin: 150 auto;
+  border: 2px solid rgb(94, 122, 103);
+  border-radius: 6px;
+  width: 30%;
+  padding: 20px 20px;
+}

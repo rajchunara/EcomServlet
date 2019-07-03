@@ -1,0 +1,121 @@
+
+.Admin {
+    width: 80%;
+    text-align: center;
+    float: left;
+    margin: 7px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .pro1{
+    display: inline;   
+  }
+
+  .add-product-list{
+    height:30px;
+	width:120px;
+	background:rgb(63, 85, 114);
+	border-radius:10px;
+	border:none;	
+	cursor:pointer;
+    font-weight:600;
+    color: white;
+      margin-left:40%;
+  }
+  .add-product-list:hover{
+    background:rgb(105, 141, 187);
+  }
+
+  .card{
+      margin-top:15px; 
+  }
+
+  .offers-product{
+      padding-top:100px;
+  }
+  
+  .offers-product h2{
+      margin-left: 40px;
+  }
+
+  .remove-btn{	
+	margin-left:60px;
+	height:30px;
+	width:120px;
+	background:rgb(216, 125, 125);
+	border-radius:10px;
+	border:none;	
+	cursor:pointer;
+    font-weight:600;
+    color: white
+}
+
+.remove-btn:hover{
+	background:rgb(190, 89, 89);
+}
+
+.users{
+    display: block;
+    height: 320px;
+    background: white;
+
+}
+
+.users h2{
+    margin-left: 40px;
+    margin-top:0;
+}
+
+.user-image{
+    border-radius:10px;
+	height:180px;
+	
+    background-size: 100% 110%;	
+    background-repeat: no-repeat;
+}
+
+.name-div h2{
+    width:70%;
+}
+
+.name-div{
+    text-align: center;
+}
+
+#user1{
+    background-image:url(src/Images/userImages/profile10.jpeg);
+}
+
+#user2{
+    background-image:url(src/Images/userImages/profile11.jpeg);
+    
+}
+
+#user3{
+    background-image:url(src/Images/userImages/profile12.jpeg);
+    
+}
+
+#user4{
+    background-image:url(src/Images/userImages/profile13.jpeg);
+    
+}
+
+.seemore{
+    width: 85%;
+    display: block;
+    text-align: end;
+    background: white;
+}
+
+.seemore:hover{
+    cursor: pointer;
+}
+
+.see-users{
+    margin-top: 30px;
+}
+
+
+

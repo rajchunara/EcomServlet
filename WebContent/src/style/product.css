@@ -1,0 +1,48 @@
+.product{
+    margin: 150px auto;
+    width:60%;
+    height: 500px;
+    background: rgb(218, 233, 227);
+    border: 2px lightslategray solid;
+    border-radius: 20px;
+}
+
+.pro-img{
+    margin: 20px;
+    width: 40%;
+    height: 300px;
+    background: url(../Images/productImage/Bag-1.jpg);
+    background-size: 100% 100%;
+    float: left;
+}
+
+.pro-img:hover{
+    cursor: pointer;
+}
+
+.pro-details{
+    margin-left:40px; 
+    float: left;
+}
+
+.pro-details h2{
+    margin-top: 20px;
+}
+
+.add-to-btn {
+    margin-top: 80px;
+    width: 200px;
+    height: 50px;;
+    background: rgb(54, 104, 100);
+    border-radius: 50px;
+    border: none;
+    color:white;
+    font-size: 20px;
+}
+
+.add-to-btn:hover{
+    background: rgb(84, 146, 141);
+    cursor: pointer;
+    outline: none !important;
+}
+
