@@ -20,7 +20,7 @@ public class ProductController {
 		List<EProduct> products = query.getResultList();
 		
 		for(EProduct pro: products){
-			System.out.println(pro.getProductId() + ". "+ pro.getProductName()+ " "+ pro.getProductPrice()+ " "+pro.getCurrency()+" "+pro.getDetails() );
+			System.out.println(pro.getProductId() + ". "+ pro.getProductName()+ " "+ pro.getProductPrice()+ " "+pro.getImagePath()+" "+pro.getDetails() );
 		}		
 		
     }	
@@ -40,8 +40,8 @@ public class ProductController {
     	
     }
     
-    public void addProducts(String productName, double productPrice, String currency, String details ){
-    	EProduct pr1 = new EProduct(productName, productPrice, currency, details, null);
+    public void addProducts(String productName, double productPrice, String ImagePath, String details ){
+    	EProduct pr1 = new EProduct(productName, productPrice, ImagePath, details, null);
 
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JpaEcom");
 		EntityManager em = emf.createEntityManager();

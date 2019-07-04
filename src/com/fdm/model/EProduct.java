@@ -17,7 +17,7 @@ public class EProduct {
 	
 	private String ProductName;
 	private double ProductPrice;
-	private String currency;
+	private String ImagePath;
 	private String details;
 	
 	@ManyToMany(targetEntity=EcomUsers.class)
@@ -26,13 +26,14 @@ public class EProduct {
 	@Override
 	public String toString() {
 		return "EProduct [productId=" + productId + ", ProductName=" + ProductName + ", ProductPrice=" + ProductPrice
-				+ ", currency=" + currency + ", details=" + details + "]";
+				+ ", ImagePath=" + ImagePath + ", details=" + details + "]";
 	}
-	public EProduct( String productName, double productPrice, String currency, String details, Set users) {
+	
+	public EProduct( String productName, double productPrice, String ImagePath, String details, Set users) {
 		super();
 		ProductName = productName;
 		ProductPrice = productPrice;
-		this.currency = currency;
+		this.ImagePath = ImagePath;
 		this.details = details;
 		this.Users =  users;
 	}
@@ -58,11 +59,11 @@ public class EProduct {
 	public void setProductPrice(double productPrice) {
 		ProductPrice = productPrice;
 	}
-	public String getCurrency() {
-		return currency;
+	public String getImagePath() {
+		return ImagePath;
 	}
-	public void setCurrency(String currency) {
-		this.currency = currency;
+	public void setImagePath(String ImagePath) {
+		this.ImagePath = ImagePath;
 	}
 	public String getDetails() {
 		return details;

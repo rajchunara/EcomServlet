@@ -8,12 +8,19 @@
     	<%@ include file="../styles.css" %>
     	<%@ include file="../style2.css" %>
     </style>
-   <link rel="stylesheet" href="src/components/styles.css" />
-    <link rel="stylesheet" href="src/components/style2.css" />
     <title>Document</title>
 </head>
 
 <body>
+
+<%
+response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+		if(session.getAttribute("username") == null){
+			response.sendRedirect("Login.jsp");
+		}
+
+%>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
@@ -23,19 +30,29 @@
             <div class="Admin">
                 <h1>Admin</h1>
             </div>
-
-            <div class="navbar-item">
-                <a href="../../index.html">
-                    <p class="nav-tag">Logout</p>
+            
+             
+            <div class="navbar-item" style="margin-right:10px; font-weight:500; color:white;">
+            	<form action="../../LogoutServlet" method="get" name="logoutform">            
+            		<input class="nav-tag Logout-btn"  type="submit" value="Logout"/>                
+            	 </form>
+            </div>
+            
+            <div class="navbar-item" >
+                <a href="Admin.jsp">
+                    <p class="nav-tag" style="width:120px; ">
+                    <% out.print("Welcome, "+session.getAttribute("username")); %>
+                    </p>
                 </a>
             </div>
-
-
+           
             <div class="navbar-item">
-                <a href="../../index.html">
+                <a href="../../index.jsp">
                     <p class="nav-tag">Home</p>
                 </a>
             </div>
+            
+           
         </div>
     </nav>
 

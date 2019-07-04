@@ -4,50 +4,28 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="./src/styles.css" />
+	<style><%@ include file="src/styles.css" %></style>
+	<link rel="stylesheet"
+	
+	
+	 href="./src/styles.css" />
+	
 	<title>Document</title>
 </head>
 
 <body>
+
+<%
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+	
+
+%>
+
+
+<% String username = (String) session.getAttribute("username");  %>
+
 	<!-- Navbar -->
-	<nav class="navbar">
-		<div class="nav-container">
-			<div class="logo">
-				<h1>Logo</h1>
-			</div>
-
-			<input class="search-bar" type="text" placeholder="search product" />
-
-			
-
-			<div class="navbar-item cart">
-				<a href="src/components/Cart.jsp">
-				<img src="./src/Images/shopping-cart.png" class="cart-icon" alt="" />
-				</a>
-			</div>
-			<div class="navbar-item">
-					<a href="src/components/Login.jsp">
-				<p class="nav-tag">Login ${type}</p>
-			</a>
-			</div>
-			<div class="navbar-item">
-				<a href="src/components/Register.jsp">
-					<p class="nav-tag">
-						Register
-					</p>
-				</a>
-			</div>
-			<div class="navbar-item">
-				
-				<p class="nav-tag">About</p>
-			</div>
-			<div class="navbar-item">
-				<a href="index.html">
-				<p class="nav-tag">Home</p>
-			</a>
-			</div>
-		</div>
-	</nav>
+	<%@include file="src/components/Navbar.jsp"%>
 
 
 	<!-- Center part -->

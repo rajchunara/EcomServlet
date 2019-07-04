@@ -7,6 +7,9 @@
 
 <body>
 
+
+
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
@@ -14,17 +17,17 @@
         <h1>Logo</h1>
       </div>
       <div class="navbar-item cart">
-          <a href="Cart.html">
+          <a href="Cart.jsp">
         <img src="../Images/shopping-cart.png" class="cart-icon" alt="" />
           </a>
       </div>
       <div class="navbar-item">
-        <a href="Login.html">
+        <a href="Login.jsp">
           <p class="nav-tag">Login</p>
         </a>
       </div>
       <div class="navbar-item">
-        <a href="Register.html">
+        <a href="Register.jsp">
           <p class="nav-tag">
             Register
           </p>
@@ -35,7 +38,7 @@
         <p class="nav-tag">About</p>
       </div>
       <div class="navbar-item">
-        <a href="../../index.html">
+        <a href="../../index.jsp">
           <p class="nav-tag">Home</p>
         </a>
       </div>

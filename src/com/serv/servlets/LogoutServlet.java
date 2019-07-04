@@ -8,19 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.fdm.controller.UserController;
-
 /**
- * Servlet implementation class Login
+ * Servlet implementation class LogoutServlet
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/LogoutServlet")
+public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login() {
+    public LogoutServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,9 +28,12 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("doget");
+		HttpSession session = request.getSession();
+		session.removeAttribute("username");
+		session.invalidate();
+		
+		response.sendRedirect("index.jsp");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		 
 	}
 
 	/**
@@ -40,37 +41,6 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println(request.getParameter("username"));
-		String username= request.getParameter("username");
-		
-		 System.out.println(request.getParameter("password"));
-		 String password= request.getParameter("password");
-		 
-		 UserController uc = new UserController();
-		 
-		if(!uc.checkUser(username, password).isEmpty()){
-			boolean success = true;
-			String user = uc.checkUser(username, password).get(0).getType();
-			System.out.println(user);
-			request.setAttribute("success", success);
-			request.setAttribute("type", user);
-			
-			HttpSession session = request.getSession();
-			session.setAttribute("username",username);
-			
-			if(user.equals("Admin")){
-
-				response.sendRedirect("src/components/Admin.jsp");
-				
-			}else if(user.equals("User")){
-				
-				response.sendRedirect("index.jsp");
-				
-			}
-		}
-				
-		
-		 
 		
 		doGet(request, response);
 	}
