@@ -10,7 +10,7 @@
 	
 	 href="./src/styles.css" />
 	
-	<title>Document</title>
+	<title>Shopping Website</title>
 </head>
 
 <body>

@@ -76,8 +76,7 @@
 						Welcome, <% out.print(session.getAttribute("username")); %>
 					</p>
 				</a>
-			</div>
-			
+			</div>			
 			
 		</div>
 	</nav>

@@ -64,7 +64,10 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 
             <div>
                 <div class="pro1">
-                    <h2>Products</h2><button class="add-product-list">ADD PRODUCT</button>
+                    <h2>Products</h2>
+                    <button class="add-product-list">
+                    <a href="AddProduct.jsp">ADD PRODUCT</a>                    
+                    </button>
                 </div>
                 <div class="pro1"></div>
             </div>
@@ -250,15 +253,15 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
         </div>
         <div class="col-4 social-icon">
             <div class="scl">
-                <img class="footer-icon facebook" src="src/Images/facebook.png" alt="" />
+                <img class="footer-icon facebook" src="../Images/facebook.png" alt="" />
             </div>
 
             <div class="scl">
-                <img class="footer-icon pinterest" src="src/Images/pinterest.png" alt="" />
+                <img class="footer-icon pinterest" src="../Images/pinterest.png" alt="" />
             </div>
 
             <div class="scl">
-                <img class="footer-icon twitter" src="src/Images/twitter.png" alt="" />
+                <img class="footer-icon twitter" src="../Images/twitter.png" alt="" />
             </div>
         </div>
     </div>
