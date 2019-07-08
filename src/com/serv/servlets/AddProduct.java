@@ -40,7 +40,7 @@ public class AddProduct extends HttpServlet {
 		System.out.println(request.getParameter("productname"));
 		
 		String filePath = "\\Users\\raj.chunara\\JavaEclipseWorkspace\\ServletTrial\\WebContent\\src\\UploadedProductImages\\";
-		
+		String filepath1 = "\\Users\\Raj\\git\\EcomServlet\\WebContent\\src\\UploadedProductImages\\";
 		
 		String fileNameLocation; 
 				
@@ -51,10 +51,21 @@ public class AddProduct extends HttpServlet {
 			try {
 				for(FileItem item: file){
 					
-			     fileNameLocation = filePath+ item.getName();
-			     System.out.println(fileNameLocation);
-				 item.write(new File(fileNameLocation));
-				 System.out.println("FileUploaded");
+					if(item.isFormField()) {
+						
+						String username = item.getFieldName();
+						String value = item.getString();
+						System.out.println(username+" "+ value);
+					}else {
+						
+						fileNameLocation = filepath1 + item.getName();
+					     System.out.println(fileNameLocation);
+						 item.write(new File(fileNameLocation));
+						 System.out.println("FileUploaded");
+					}
+					
+					
+			     
 				 
 				}
 				response.sendRedirect("src/components/AddProduct.jsp");

@@ -69,6 +69,34 @@ public class UserController {
 	}
 	
 	
+	//Get all the users 
+	
+	public List<EcomUsers> getAllUsers(){
+		Home ho = new Home();
+		
+		Query query = em.createQuery("SELECT e FROM EcomUsers e WHERE e.type = :type");
+		
+		
+		query.setParameter("type", "User");
+		List<EcomUsers> founduser = (List<EcomUsers>) query.getResultList();
+		
+		if(!founduser.isEmpty()){
+			
+			return founduser;				
+					
+		}else {			
+			System.out.println("Wrong username or password");
+//			loginUser(choice);						
+		}
+		
+		return null;	
+	}
+	
+	
+	
+	
+	
+	
 	//view when admin login
 	public void adminFunction(){
 	Home ho = new Home();

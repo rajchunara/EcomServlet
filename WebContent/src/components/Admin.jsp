@@ -12,14 +12,14 @@
 </head>
 
 <body>
-
+<%-- 
 <%
 response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 		if(session.getAttribute("username") == null){
 			response.sendRedirect("Login.jsp");
 		}
 
-%>
+%> --%>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -45,6 +45,14 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
                     </p>
                 </a>
             </div>
+            
+             <div class="navbar-item">
+                <a href="UsersList.jsp">
+                    <p class="nav-tag">Users</p>
+                </a>
+            </div>
+            
+          
            
             <div class="navbar-item">
                 <a href="../../index.jsp">
@@ -68,6 +76,7 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
                     <button class="add-product-list">
                     <a href="AddProduct.jsp">ADD PRODUCT</a>                    
                     </button>
+                   
                 </div>
                 <div class="pro1"></div>
             </div>
@@ -185,6 +194,111 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
                     <button class="remove-btn">Remove Product</button>
                 </div>
             </div>
+            
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
+             <div class="card">
+                <div class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <p class="pro product-name">Product Name</p>
+                    <p class="pro product-price">CA$ 99.99</p>
+                </div>
+
+                <div class="add-div">
+                    <button class="remove-btn">Remove Product</button>
+                </div>
+            </div>
 
 
 
@@ -192,7 +306,7 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
         <div class="seemore see-products">See more...</div>
 
         <!-- Users -->
-
+<!-- 
         <div class="users">
 
             <div>
@@ -239,7 +353,7 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             </div>
         </div>
         <div class="seemore see-users">See more...</div>
-    </div>
+    </div> -->
 
 
 
@@ -247,7 +361,7 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 
     <!-- Footer -->
 
-    <div class=" footer" style="margin-top: 200px;">
+    <div class=" footer" style="margin-top: 200px; ">
         <div class="col-6 footer-items copy-right">
             Logo copyright &copy; 2019
         </div>

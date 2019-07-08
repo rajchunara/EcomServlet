@@ -53,5 +53,24 @@ public class ProductController {
 		em.getTransaction().commit();
     	
     }
+    
+    public void removeProduct(String productName) {
+    	
+		/*
+		 * EProduct pr1 = new EProduct(productName, productPrice, ImagePath, details,
+		 * null);
+		 * 
+		 * EntityManagerFactory emf = Persistence.createEntityManagerFactory("JpaEcom");
+		 * EntityManager em = emf.createEntityManager();
+		 * 
+		 * em.getTransaction().begin();
+		 * 
+		 * em.persist(pr1);
+		 * 
+		 * em.getTransaction().commit();
+		 */
+    	
+    	
+    }
 
 }
